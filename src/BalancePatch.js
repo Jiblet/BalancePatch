@@ -28,6 +28,36 @@ class Mod
 		if(Config.optics){
 			Logger.info(`Balancing: Optics`);
 
+			//Iron Sights - why do some flip up irons have +1 and others don't...? I dont want MBUS sights on *everything*
+			{
+				let modErgo = "1"; //this matches the Magpul MBUS, and I'm sick of buying those
+				
+				//FN SCAR front flip-up sight
+				items["61816fcad92c473c770215cc"]._props.Ergonomics = modErgo,
+				
+				//FN SCAR rear flip-up sight
+				items["61817865d3a39d50044c13a4"]._props.Ergonomics = modErgo,
+
+				//MCX flip-up rear sight
+				items["5fc0fa957283c4046c58147e"]._props.Ergonomics = modErgo,
+
+				//HK MP7 flip-up front sight
+				items["5ba26b01d4351e0085325a51"]._props.Ergonomics = modErgo,
+
+				//HK MP7 flip-up rear sight
+				items["5ba26b17d4351e00367f9bdd"]._props.Ergonomics = modErgo,
+
+				//HK 416A5 flip-up rear sight
+				items["5bb20e49d4351e3bac1212de"]._props.Ergonomics = modErgo,
+
+				//MPX flip-up rear sight
+				items["5894a81786f77427140b8347"]._props.Ergonomics = modErgo,
+
+				//MPX flip-up front sight
+				items["5894a73486f77426d259076c"]._props.Ergonomics = modErgo
+			}
+
+
 			//Assault Scopes 
 			{
 				let modErgo = "-2"; //this matches the HAMR, a 4x with a red dot. This should be where all other assault scopes line up :)
@@ -1143,6 +1173,24 @@ class Mod
 				//MVF001 A3 Vertical Grip KeyMod black
 				items["5fc0f9b5d724d907e2077d82"]._props.Recoil = modRecoil,
 				items["5fc0f9b5d724d907e2077d82"]._props.Ergonomics = modErgo
+				
+				//Magpuls up here for pretty colours with high ergos for the FDE, FG and OD fans
+				//Magpul AFG grip black
+				items["588226d124597767ad33f787"]._props.Recoil = modRecoil,
+				items["588226d124597767ad33f787"]._props.Ergonomics = modErgo,        
+		
+				//Magpul AFG grip FDE
+				items["588226dd24597767ad33f789"]._props.Recoil = modRecoil,
+				items["588226dd24597767ad33f789"]._props.Ergonomics = modErgo,				
+				
+				//Magpul AFG grip FG
+				items["588226e62459776e3e094af7"]._props.Recoil = modRecoil,
+				items["588226e62459776e3e094af7"]._props.Ergonomics = modErgo,				
+				
+				//Magpul AFG grip OD
+				items["588226ef24597767af46e39c"]._props.Recoil = modRecoil,
+				items["588226ef24597767af46e39c"]._props.Ergonomics = modErgo
+
 				//Note to the reader: the last part in a given { } must not have a , at the end of the line.
 				
 			}
@@ -1166,22 +1214,6 @@ class Mod
 				//Fortis Shift tactical grip
 				items["59f8a37386f7747af3328f06"]._props.Recoil = modRecoil,
 				items["59f8a37386f7747af3328f06"]._props.Ergonomics = modErgo,
-				
-				//Magpul AFG grip black
-				items["588226d124597767ad33f787"]._props.Recoil = modRecoil,
-				items["588226d124597767ad33f787"]._props.Ergonomics = modErgo,        
-		
-				//Magpul AFG grip FDE
-				items["588226dd24597767ad33f789"]._props.Recoil = modRecoil,
-				items["588226dd24597767ad33f789"]._props.Ergonomics = modErgo,				
-				
-				//Magpul AFG grip FG
-				items["588226e62459776e3e094af7"]._props.Recoil = modRecoil,
-				items["588226e62459776e3e094af7"]._props.Ergonomics = modErgo,				
-				
-				//Magpul AFG grip OD
-				items["588226ef24597767af46e39c"]._props.Recoil = modRecoil,
-				items["588226ef24597767af46e39c"]._props.Ergonomics = modErgo,
 				
 				//SE-5 Express Grip
 				items["5b057b4f5acfc4771e1bd3e9"]._props.Recoil = modRecoil,
@@ -1232,18 +1264,6 @@ class Mod
 				let modRecoil = lowErgoR;
 				let modErgo = lowErgoE;
 				
-				//Tango Down Stubby BGV-MK46K tactical grip Black
-				items["558032614bdc2de7118b4585"]._props.Recoil = modRecoil,
-				items["558032614bdc2de7118b4585"]._props.Ergonomics = modErgo,
-				
-				//Tango Down Stubby BGV-MK46K tactical grip FDE
-				items["58c157be86f77403c74b2bb6"]._props.Recoil = modRecoil,
-				items["58c157be86f77403c74b2bb6"]._props.Ergonomics = modErgo,
-				
-				//Tango Down Stubby BGV-MK46K tactical grip FG
-				items["58c157c886f774032749fb06"]._props.Recoil = modRecoil,
-				items["58c157c886f774032749fb06"]._props.Ergonomics = modErgo,
-				
 				//TD Aluminium skeletonized vertical grip
 				items["5f6340d3ca442212f4047eb2"]._props.Recoil = modRecoil,
 				items["5f6340d3ca442212f4047eb2"]._props.Ergonomics = modErgo,
@@ -1272,19 +1292,30 @@ class Mod
 				items["5c1bc5612e221602b5429350"]._props.Recoil = modRecoil,
 				items["5c1bc5612e221602b5429350"]._props.Ergonomics = modErgo	
 				
-			}
-			//badErgo -4/+2
-			{
-				let modRecoil = badErgoR;
-				let modErgo = badErgoE;
-				
 				//Magpul RVG grip black	//TODO - Disagree here - Stubby wee thing!
 				items["59fc48e086f77463b1118392"]._props.Recoil = modRecoil,
 				items["59fc48e086f77463b1118392"]._props.Ergonomics = modErgo,
 				
 				//Magpul RVG grip FDE	//TODO - Disagree here - Stubby wee thing!
 				items["5fce0cf655375d18a253eff0"]._props.Recoil = modRecoil,
-				items["5fce0cf655375d18a253eff0"]._props.Ergonomics = modErgo,
+				items["5fce0cf655375d18a253eff0"]._props.Ergonomics = modErgo
+			}
+			//badErgo -4/+2
+			{
+				let modRecoil = badErgoR;
+				let modErgo = badErgoE;
+				
+				//Tango Down Stubby BGV-MK46K tactical grip Black
+				items["558032614bdc2de7118b4585"]._props.Recoil = modRecoil,
+				items["558032614bdc2de7118b4585"]._props.Ergonomics = modErgo,
+
+				//Tango Down Stubby BGV-MK46K tactical grip FDE
+				items["58c157be86f77403c74b2bb6"]._props.Recoil = modRecoil,
+				items["58c157be86f77403c74b2bb6"]._props.Ergonomics = modErgo,
+
+				//Tango Down Stubby BGV-MK46K tactical grip FG
+				items["58c157c886f774032749fb06"]._props.Recoil = modRecoil,
+				items["58c157c886f774032749fb06"]._props.Ergonomics = modErgo,
 				
 				//Zenit RK-1 Foregrip on B-25U mount
 				items["5c1cd46f2e22164bef5cfedb"]._props.Recoil = modRecoil,
