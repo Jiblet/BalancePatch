@@ -16,7 +16,7 @@ class Mod
 {
     constructor()
     {
-        this.mod = "FershteBalancePatch";
+        this.mod = "BalancePatch";
 		Logger.info(`Loading: ${this.mod}`);
         ModLoader.onLoad[this.mod] = this.load.bind(this);
     }
@@ -219,7 +219,7 @@ class Mod
 				
 				//KMZ
 				{
-					let modErgo = "-4"; //the sum when u use the mount and the eyecup
+					let modErgo = "-4"; //the sum when you use the mount and the eyecup
 					
 					//KMZ 1P59 3-10x riflescope
 					items["5d0a3a58d7ad1a669c15ca14"]._props.Ergonomics = modErgo,
@@ -590,6 +590,10 @@ class Mod
 					items["55f84c3c4bdc2d5f408b4576"]._props.Recoil = modRecoil,
 					items["55f84c3c4bdc2d5f408b4576"]._props.Ergonomics = modErgo,
 					
+					//AR-15 Aeroknox AX-15 10.5 inch M-LOK handguard
+					items["619b5db699fb192e7430664f"]._props.Recoil = modRecoil,
+					items["619b5db699fb192e7430664f"]._props.Ergonomics = modErgo,
+
 					//Daniel Defence RIS II 9.5 foregrip for AR-15-compatible systems // different lol
 					items["588b56d02459771481110ae2"]._props.Recoil = modRecoil,
 					items["588b56d02459771481110ae2"]._props.Ergonomics = modErgo,
@@ -614,6 +618,10 @@ class Mod
 					//Geissele SMR Mk.16 9.5 inch M-LOK handguard for AR-15
 					items["5ea16acdfadf1d18c87b0784"]._props.Recoil = modRecoil,
 					items["5ea16acdfadf1d18c87b0784"]._props.Ergonomics = modErgo,
+					
+					//AR-15 Unique-ARs Wing & Skull 12 inch handguard
+					items["6087e0336d0bd7580617bb7a"]._props.Recoil = modRecoil,
+					items["6087e0336d0bd7580617bb7a"]._props.Ergonomics = modErgo,
 					
 					//Handguard War Sport LVOA-S blk. for use with AR-15 and compatible
 					items["595cf16b86f77427440c32e2"]._props.Recoil = modRecoil,
@@ -1151,6 +1159,10 @@ class Mod
 				items["5cda9bcfd7f00c0c0b53e900"]._props.Recoil = modRecoil,
 				items["5cda9bcfd7f00c0c0b53e900"]._props.Ergonomics = modErgo,
 				
+				//HK Sturmgriff foregrip
+				items["619386379fb0c665d5490dbe"]._props.Recoil = modRecoil,
+				items["619386379fb0c665d5490dbe"]._props.Ergonomics = modErgo,			
+
 				//Fortis Shift tactical grip
 				items["59f8a37386f7747af3328f06"]._props.Recoil = modRecoil,
 				items["59f8a37386f7747af3328f06"]._props.Ergonomics = modErgo,
@@ -1344,7 +1356,15 @@ class Mod
 				//PWS CQB 5.56 x 45 Muzzle brake
 				items["5943ee5a86f77413872d25ec"]._props.Recoil = "-19",
 				items["5943ee5a86f77413872d25ec"]._props.Ergonomics = "-2",
+
+				//TAA ZK-23 5.56x45 muzzle brake
+				items["612e0e55a112697a4b3a66e7"]._props.Recoil = "-21",
+				items["612e0e55a112697a4b3a66e7"]._props.Ergonomics = "-3",
 				
+				//BLITZ 5.56x45 flash hider
+				items["615d8e2f1cb55961fa0fd9a4"]._props.Recoil = "-19",
+				items["615d8e2f1cb55961fa0fd9a4"]._props.Ergonomics = "-1",				
+
 				//TROY Claymore 5.56x45 muzzle brake for AR-15
 				items["5cc9b815d7f00c000e2579d6"]._props.Recoil = "-22",
 				items["5cc9b815d7f00c000e2579d6"]._props.Ergonomics = "-2",
@@ -1359,6 +1379,10 @@ class Mod
 				items["56ea8180d2720bf2698b456a"]._props.Recoil = "-10",
 				items["56ea8180d2720bf2698b456a"]._props.Ergonomics = "-1",
 				
+				//AWC PSR 5.56x45 muzzle brake
+				items["612e0cfc8004cc50514c2d9e"]._props.Recoil = "-19",
+				items["612e0cfc8004cc50514c2d9e"]._props.Ergonomics = "-1",
+
 				//Surefire WarComp 5.56x45 Flash hider for AR-15
 				items["5c6d710d2e22165df16b81e7"]._props.Recoil = "-19",
 				items["5c6d710d2e22165df16b81e7"]._props.Ergonomics = "-1",
@@ -1430,12 +1454,17 @@ class Mod
 		{		
 			//okay so this is the part that some people will object to
 			//I'm gonna buff the shit out of ak parts. Like a lot.
+			//The Best 545 Recoil Mit in base is 24%
 			//Muzzle Brakes
 			{
 				// Izhmash 5.45x39 АК-74 muzzle brake & compensator (6P20 0-20)
 				items["5649aa744bdc2ded0b8b457e"]._props.Recoil = "-13",
 				items["5649aa744bdc2ded0b8b457e"]._props.Ergonomics = "0",
 				
+				//AK Hexagon "Reactor" 5.45x39 muzzle brake
+				items["615d8f5dd92c473c770212ef"]._props.Recoil = "-22",
+				items["615d8f5dd92c473c770212ef"]._props.Ergonomics = "0",
+
 				//IzhMash 5.45x39 muzzle brake for AKS-74U (6P26 0-20)
 				items["57dc324a24597759501edc20"]._props.Recoil = "-13",
 				items["57dc324a24597759501edc20"]._props.Ergonomics = "0",
@@ -1453,36 +1482,40 @@ class Mod
 				items["5ac7655e5acfc40016339a19"]._props.Ergonomics = "0",
 				
 				//Zenit DTK-1 7.62x39 & 5.45x39 muzzle brake & compensator for AK
-				items["5649ab884bdc2ded0b8b457f"]._props.Recoil = "-18",
-				items["5649ab884bdc2ded0b8b457f"]._props.Ergonomics = "-1",
+				items["5649ab884bdc2ded0b8b457f"]._props.Recoil = "-19",
+				items["5649ab884bdc2ded0b8b457f"]._props.Ergonomics = "1",
 				
 				//SRVV 5.45x39 АК-74 muzzle brake
-				items["5cc9a96cd7f00c011c04e04a"]._props.Recoil = "-20",
-				items["5cc9a96cd7f00c011c04e04a"]._props.Ergonomics = "-1",
+				items["5cc9a96cd7f00c011c04e04a"]._props.Recoil = "-21",
+				items["5cc9a96cd7f00c011c04e04a"]._props.Ergonomics = "1",
 				
 				//PWS CQB 74 5.45x39 Muzzle brake
 				items["5943eeeb86f77412d6384f6b"]._props.Recoil = "-22",
-				items["5943eeeb86f77412d6384f6b"]._props.Ergonomics = "-3",
+				items["5943eeeb86f77412d6384f6b"]._props.Ergonomics = "3",
 				
 				//JMAC RRD-4C muzzle brake for AK-74 type thread
-				items["5f633f791b231926f2329f13"]._props.Recoil = "-23",
-				items["5f633f791b231926f2329f13"]._props.Ergonomics = "-2"
+				items["5f633f791b231926f2329f13"]._props.Recoil = "-24",
+				items["5f633f791b231926f2329f13"]._props.Ergonomics = "-3"
 			}
 			
 			//Silencers
 			{
-				
+
+				//AK Hexagon "Wafflemaker" 5.45x39 sound suppressor
+			items["615d8f8567085e45ef1409ca"]._props.Recoil = "-2",
+			items["615d8f8567085e45ef1409ca"]._props.Ergonomics = "-15",
+
 				//Hexagon AK-74 5.45x39 sound suppressor
-				items["593d493f86f7745e6b2ceb22"]._props.Recoil = "-17",
+				items["593d493f86f7745e6b2ceb22"]._props.Recoil = "-19",
 				items["593d493f86f7745e6b2ceb22"]._props.Ergonomics = "-11",
 		
 				//PBS-4 5.45x39 Silencer
-				items["57ffb0e42459777d047111c5"]._props.Recoil = "-20",
+				items["57ffb0e42459777d047111c5"]._props.Recoil = "-22",
 				items["57ffb0e42459777d047111c5"]._props.Ergonomics = "-15",
 
 				//TGP-A 5.45x39 muzzle device/suppressor
 				items["564caa3d4bdc2d17108b458e"]._props.Recoil = "-21", //11% buff from stock - this is to put it in line with AR platform weapons.
-				items["564caa3d4bdc2d17108b458e"]._props.Ergonomics = "-17"
+				items["564caa3d4bdc2d17108b458e"]._props.Ergonomics = "-14"
 			}
 		}
 		
@@ -1530,12 +1563,12 @@ class Mod
 			//Silencers
 			{
 				//Hexagon AKM 7.62x39 sound suppressor
-				items["593d489686f7745c6255d58a"]._props.Recoil = "-20",
+				items["593d489686f7745c6255d58a"]._props.Recoil = "-22",
 				items["593d489686f7745c6255d58a"]._props.Ergonomics = "-16",
 				
 				//Hexagon "DTKP MK.2" 7.62x39 sound suppressor
-				items["5e208b9842457a4a7a33d074"]._props.Recoil = "-20",
-				items["5e208b9842457a4a7a33d074"]._props.Ergonomics = "-14",
+				items["5e208b9842457a4a7a33d074"]._props.Recoil = "-24",
+				items["5e208b9842457a4a7a33d074"]._props.Ergonomics = "-20",
 				
 				//PBS-1 7.62x39 silencer
 				items["5a0d63621526d8dba31fe3bf"]._props.Recoil = "-23",
@@ -1543,11 +1576,11 @@ class Mod
 		
 				//Rotor 43 7.62x39 muzzle brake
 				items["5a9fbacda2750c00141e080f"]._props.Recoil = "-18",
-				items["5a9fbacda2750c00141e080f"]._props.Ergonomics = "-12",
+				items["5a9fbacda2750c00141e080f"]._props.Ergonomics = "-6",
 
 				//Zenit DTK-4М muzzle brake
-				items["59fb257e86f7742981561852"]._props.Recoil = "-23", //11% buff from stock - this is to put it in line with AR platform weapons.
-				items["59fb257e86f7742981561852"]._props.Ergonomics = "-14"
+				items["59fb257e86f7742981561852"]._props.Recoil = "-24", //11% buff from stock - this is to put it in line with AR platform weapons.
+				items["59fb257e86f7742981561852"]._props.Ergonomics = "-20"
 			}
 		}
 		
@@ -1565,6 +1598,10 @@ class Mod
 					//Desert Tech .308 Flash hider
 					items["5dcbe965e4ed22586443a79d"]._props.Recoil = "-15",
 					items["5dcbe965e4ed22586443a79d"]._props.Ergonomics = "0",
+					
+					//AR-10 CMMG SV Brake 7.62x51 muzzle brake
+					items["6065c6e7132d4d12c81fd8e1"]._props.Recoil = "-20",
+					items["6065c6e7132d4d12c81fd8e1"]._props.Ergonomics = "0",
 					
 					//Muzzle brake Keeno Arms SHREWD 7.62x51 for AR-10
 					items["5cdd7685d7f00c000f260ed2"]._props.Recoil = "-20",
@@ -1588,6 +1625,18 @@ class Mod
 				}
 				//mounting kits
 				{
+					//KAC QDC 7.62x51 muzzle brake kit
+					items["6130c43c67085e45ef1405a1"]._props.Recoil = "-19",
+					items["6130c43c67085e45ef1405a1"]._props.Ergonomics = "-5",		
+
+					//AWC PSR 7.62x51 muzzle brake
+					items["612e0d3767085e45ef14057f"]._props.Recoil = "-19",
+					items["612e0d3767085e45ef14057f"]._props.Ergonomics = "-5",						
+					
+					//HK Prolonged 7.62x51 flash hider
+					items["61713308d92c473c770214a0"]._props.Recoil = "-16",
+					items["61713308d92c473c770214a0"]._props.Ergonomics = "0",
+
 					//SIG micro brake muzzle brake 7.62x51
 					items["5fbcbd02900b1d5091531dd3"]._props.Recoil = "-18",
 					items["5fbcbd02900b1d5091531dd3"]._props.Ergonomics = "0",
@@ -1613,8 +1662,8 @@ class Mod
 					items["5cf78720d7f00c06595bc93e"]._props.Ergonomics = "-3",
 					
 					//KAC QDC Flash	suppressor kit 7.62x51 flash hider
-					items["5dfa3cd1b33c0951220c079b"]._props.Recoil = "-19",
-					items["5dfa3cd1b33c0951220c079b"]._props.Ergonomics = "-3",
+					items["5dfa3cd1b33c0951220c079b"]._props.Recoil = "-17",
+					items["5dfa3cd1b33c0951220c079b"]._props.Ergonomics = "3",
 				
 					//Daniel Defense Wave Muzzle Brake 7.62x51
 					items["5d1f819086f7744b355c219b"]._props.Recoil = "-19",
@@ -1634,7 +1683,7 @@ class Mod
 			{
 				
 				//HK G28 B&T QD 7.62x51 sound suppressor 
-				items["6171367e1cb55961fa0fdb36"]._props.Recoil = "-24",
+				items["6171367e1cb55961fa0fdb36"]._props.Recoil = "-11",
 				
 				//Sig-Sauer SRD QD 7.62x51 Sound Suppressor
 				items["5fbe760793164a5b6278efc8"]._props.Recoil = "-2",
@@ -1909,7 +1958,20 @@ class Mod
 					items["5c5db6f82e2216003a0fe914"]._props.Ergonomics = "1"
 				}
 				
-				
+			}
+			//AR Gas Blocks - basically all these parts are available to meta weapons and should be the same to avoid forcing certain build appearances.
+			{
+					//AR-10 KAC Low Profile Gas Block
+					items["5dfa3d45dfc58d14537c20b0"]._props.Recoil = "-4",	
+					items["5dfa3d45dfc58d14537c20b0"]._props.Ergonomics = "-2",
+					
+					//JP Enterprises Gas System-5B
+					items["5d00ec68d7ad1a04a067e5be"]._props.Recoil = "-4",	
+					items["5d00ec68d7ad1a04a067e5be"]._props.Ergonomics = "-2",
+					
+					//JP Enterprises Gas System-6
+					items["5a34fbadc4a28200741e230a"]._props.Recoil = "-4",	
+					items["5a34fbadc4a28200741e230a"]._props.Ergonomics = "-2"
 			}
 			//pistol caliber muzzle devices:
 			{
