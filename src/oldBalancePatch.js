@@ -580,37 +580,6 @@ class Mod
 		//Furniture
 		if(Config.furniture){
 			Logger.info(`Balancing: Furniture`);
-			
-			//SCAR Parts
-			{
-				
-					//FN SCAR-L 5.56x45 upper receiver (FDE)	
-					items["618426d96c780c1e710c9b9f"]._props.Recoil = "-9",
-					items["618426d96c780c1e710c9b9f"]._props.Ergonomics = "7",					
-					
-					//FN SCAR-L 5.56x45 upper receiver
-					items["618405198004cc50514c3594"]._props.Recoil = "-9",
-					items["618405198004cc50514c3594"]._props.Ergonomics = "7",	
-				
-					//FN SCAR-H 7.62x51 upper receiver (FDE)
-					items["6165aeedfaa1272e431521e3"]._props.Recoil = "-4",
-					items["6165aeedfaa1272e431521e3"]._props.Ergonomics = "7",					
-					
-					//FN SCAR-H 7.62x51 upper receiver
-					items["6165adcdd3a39d50044c120f"]._props.Recoil = "-4",
-					items["6165adcdd3a39d50044c120f"]._props.Ergonomics = "7",						
-					
-					//FN SCAR Kinetic MREX 6.5 M-LOK rail
-					items["619666f4af1f5202c57a952d"]._props.Recoil = "0",
-					items["619666f4af1f5202c57a952d"]._props.Ergonomics = "0",	
-					
-					//FN SCAR PWS SRX rail extension
-					items["61965d9058ef8c428c287e0d"]._props.Recoil = "0",
-					items["61965d9058ef8c428c287e0d"]._props.Ergonomics = "0"	
-				
-				
-				
-			}
 
 			//Handguards
 		{
@@ -1370,10 +1339,10 @@ class Mod
 		{
 			
 			//Muzzle Brakes
-			{								
-				//FN SCAR-L 5.56x45 flash hider
-				items["618407a850224f204c1da549"]._props.Recoil = "-18",
-				items["618407a850224f204c1da549"]._props.Ergonomics = "0",
+			{				
+				//SilencerCo ASR 51T 5.56x45 flash hider
+				items["609269c3b0e443224b421cc1"]._props.Recoil = "-20",
+				items["609269c3b0e443224b421cc1"]._props.Ergonomics = "-1",
 				
 				//Izhmash 5.56x45 АК-101 muzzlebrake & compensator
 				items["5ac72e615acfc43f67248aa0"]._props.Recoil = "-13",
@@ -1438,12 +1407,8 @@ class Mod
 				//----mounting kits----
 				
 				//KAC QD Compensator 5.56x45
-				items["56ea8180d2720bf2698b456a"]._props.Recoil = "-14",
-				items["56ea8180d2720bf2698b456a"]._props.Ergonomics = "-1",				
-				
-				//SilencerCo ASR 51T 5.56x45 flash hider
-				items["609269c3b0e443224b421cc1"]._props.Recoil = "-20",
-				items["609269c3b0e443224b421cc1"]._props.Ergonomics = "-1",
+				items["56ea8180d2720bf2698b456a"]._props.Recoil = "-10",
+				items["56ea8180d2720bf2698b456a"]._props.Ergonomics = "-1",
 				
 				//AWC PSR 5.56x45 muzzle brake
 				items["612e0cfc8004cc50514c2d9e"]._props.Recoil = "-19",
@@ -1470,11 +1435,11 @@ class Mod
 				items["5f6339d53ada5942720e2dc3"]._props.Ergonomics = "-3",
 				
 				//Daniel Defense Wave Muzzle Brake 5.56x45
-				items["5cff9e5ed7ad1a09407397d4"]._props.Recoil = "-20",
+				items["5cff9e5ed7ad1a09407397d4"]._props.Recoil = "-19",
 				items["5cff9e5ed7ad1a09407397d4"]._props.Ergonomics = "-1",
 				
 				//Thunder Beast 223CB Muzzle brake 5.56x45
-				items["5d440625a4b9361eec4ae6c5"]._props.Recoil = "-22",
+				items["5d440625a4b9361eec4ae6c5"]._props.Recoil = "-21",
 				items["5d440625a4b9361eec4ae6c5"]._props.Ergonomics = "-2",
 				
 				//AAC Blackout 51T 5.56x45 flash-hider
@@ -1485,8 +1450,8 @@ class Mod
 			//Silencers
 			{
 				//SilencerCo Saker ASR 556 5.56x45 sound suppressor
-				items["60926df0132d4d12c81fd9df"]._props.Recoil = "-4",
-				items["60926df0132d4d12c81fd9df"]._props.Ergonomics = "-13",
+				items["5ea17bbc09aa976f2e7a51cd"]._props.Recoil = "-3",
+				items["5ea17bbc09aa976f2e7a51cd"]._props.Ergonomics = "-13",
 				
 				//Surefire SOCOM556-RC2 5.56x45 silencer
 				items["5ea17bbc09aa976f2e7a51cd"]._props.Recoil = "-2",
@@ -1501,11 +1466,11 @@ class Mod
 				items["55d6190f4bdc2d87028b4567"]._props.Ergonomics = "-6",
 				
 				//KAC QDSS NT-4 FDE 5.56x45 silencer
-				items["57dbb57e2459774673234890"]._props.Recoil = "-10",
+				items["57dbb57e2459774673234890"]._props.Recoil = "-13",
 				items["57dbb57e2459774673234890"]._props.Ergonomics = "-15",
 				
 				//KAC QDSS NT-4 Black 5.56x45 silencer
-				items["57da93632459771cb65bf83f"]._props.Recoil = "-10",
+				items["57da93632459771cb65bf83f"]._props.Recoil = "-13",
 				items["57da93632459771cb65bf83f"]._props.Ergonomics = "-15",
 				
 				//standalone
@@ -1568,9 +1533,9 @@ class Mod
 			{
 
 				//AK Hexagon "Wafflemaker" 5.45x39 sound suppressor
-				items["615d8f8567085e45ef1409ca"]._props.Recoil = "-2",
-				items["615d8f8567085e45ef1409ca"]._props.Ergonomics = "-15",
-				
+			items["615d8f8567085e45ef1409ca"]._props.Recoil = "-2",
+			items["615d8f8567085e45ef1409ca"]._props.Ergonomics = "-15",
+
 				//Hexagon AK-74 5.45x39 sound suppressor
 				items["593d493f86f7745e6b2ceb22"]._props.Recoil = "-19",
 				items["593d493f86f7745e6b2ceb22"]._props.Ergonomics = "-11",
@@ -1690,11 +1655,7 @@ class Mod
 					items["5d026791d7ad1a04a067ea63"]._props.Ergonomics = "-2"
 				}
 				//mounting kits
-				{							
-					//AAC SCAR-SD 51T 7.62x51 flash hider
-					items["618178aa1cb55961fa0fdc80"]._props.Recoil = "-18",
-					items["618178aa1cb55961fa0fdc80"]._props.Ergonomics = "0",
-				
+				{
 					//KAC QDC 7.62x51 muzzle brake kit
 					items["6130c43c67085e45ef1405a1"]._props.Recoil = "-19",
 					items["6130c43c67085e45ef1405a1"]._props.Ergonomics = "-5",		
@@ -1791,7 +1752,7 @@ class Mod
 		//outliers
 		{
 			//Silencerco Hybrid 46 multi-caliber silencer
-			items["59bffbb386f77435b379b9c2"]._props.Recoil = "-21", // this is stronger than usual because it can't go on top of a muzzle brake.
+			items["59bffbb386f77435b379b9c2"]._props.Recoil = "-18", // this is stronger than usual because it can't go on top of a muzzle brake.
 			items["59bffbb386f77435b379b9c2"]._props.Ergonomics = "-8", //this silencer is extremely ergonomic, because, well, it should be special in at least one way lol.
 			
 			//Rotor 43 .366TKM muzzle brake
@@ -1974,52 +1935,6 @@ class Mod
 					items["5fb6558ad6f0b2136f2d7eb7"]._props.Ergonomics = "21"
 				}
 			}
-			//MP7s 
-			{
-				
-				//HK MP7A1 4.6x30 submachine gun
-				items["5ba26383d4351e00334c93d9"]._props.RecoilForceUp = "51",	
-				items["5ba26383d4351e00334c93d9"]._props.RecoilForceBack = "175",	
-
-				//HK MP7A2 4.6x30 submachine gun
-				items["5bd70322209c4d00d7167b8f"]._props.RecoilForceUp = "51",	
-				items["5bd70322209c4d00d7167b8f"]._props.RecoilForceBack = "175"	
-				
-			}
-			//MP5s
-			{
-				//HK MP5K 9x19 submachine gun
-				items["5d2f0d8048f0356c925bc3b0"]._props.RecoilForceUp = "49",	
-				items["5d2f0d8048f0356c925bc3b0"]._props.RecoilForceBack = "195",	
-
-				//HK MP5 9x19 submachine gun (Navy 3 Round Burst)
-				items["5926bb2186f7744b1c6c6e60"]._props.RecoilForceUp = "33",	
-				items["5926bb2186f7744b1c6c6e60"]._props.RecoilForceBack = "150",					
-				
-				//HK MP5 A2 stock
-				items["5926d3c686f77410de68ebc8"]._props.Recoil = "0",	
-				
-				//HK MP5 A3 old model stock
-				items["5926d40686f7740f152b6b7e"]._props.Recoil = "0"
-				
-			}
-			//UMP
-			{
-				//HK UMP polymer stock
-				items["5fc3e4ee7283c4046c5814af"]._props.Recoil = "0",	
-				
-				//HK UMP .45 ACP submachine gun
-				items["5fc3e272f8b6a877a729eac5"]._props.RecoilForceUp = "49",	
-				items["5fc3e272f8b6a877a729eac5"]._props.RecoilForceBack = "195",	
-				
-				//HK UMP .45 ACP 8 inch barrel
-				items["5fc3e4a27283c4046c5814ab"]._props.Recoil = "5",	
-				
-				//HK UMP .45 ACP 8 inch threaded barrel
-				items["6130c3dffaa1272e43151c7d"]._props.Recoil = "5"
-				
-				
-			}
 			//MPX
 			{
 				//logic: best barrel, best can, best handguard, best stock 
@@ -2098,34 +2013,7 @@ class Mod
 				items["5fbbc3324e8a554c40648348"]._props.Recoil = "-20",	
 
 				//A2 9x19 Flash hider for MPX
-				items["58949dea86f77409483e16a8"]._props.Recoil = "-20",		
-
-				//PP-19-01 "Vityaz" 9x19 sound suppressor
-				items["59bfc5c886f7743bf6794e62"]._props.Recoil = "-25",
-
-				//PP-19-01 "Vityaz" 9x19 muzzle brake-compensator
-				items["5998597786f77414ea6da093"]._props.Recoil = "-15",	
-
-				//Saiga-9 9x19 muzzle brake-compensator
-				items["5998598e86f7740b3f498a86"]._props.Recoil = "-15",				
-				
-				//HK UMP B&T OEM .45 ACP sound suppressor
-				items["6130c4d51cb55961fa0fd49f"]._props.Recoil = "-20",	
-
-				//TACCOM Carbine Brake multi-caliber
-				items["5cf6935bd7f00c06585fb791"]._props.Recoil = "-20",	
-
-				//AAC Illusion 9 9x19 sound suppressor
-				items["5c7e8fab2e22165df16b889b"]._props.Recoil = "-23",
-
-				//SIG Sauer SRD9 9x19 sound suppressor
-				items["5c6165902e22160010261b28"]._props.Recoil = "-22",
-
-				//SilencerCo Osprey 9 9x19 sound suppressor
-				items["5a32a064c4a28200741e22de"]._props.Recoil = "-23",
-
-				//Rotor 43 9x19 muzzle brake-compensator
-				items["5a9fb739a2750c003215717f"]._props.Recoil = "-18",				
+				items["5fc4b9b17283c4046c5814d7"]._props.Recoil = "-20",					
 				
 				//SilencerCo Omega 45k .45 ACP sound suppressor
 				items["5fc4b9b17283c4046c5814d7"]._props.Recoil = "-25",	
