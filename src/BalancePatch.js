@@ -442,6 +442,9 @@ class Mod
 		
 					//HK "Battle Grip" pistol grip for AR-15 based systems
 					items["5bb20e18d4351e00320205d5"]._props.Ergonomics = modErgo,
+		
+					//SIG MCX pistol grip
+					items["5fbcbd6c187fea44d52eda14"]._props.Ergonomics = modErgo,
 					
 					//AR-15 DLG-123 pistol grip
 					items["602e71bd53a60014f9705bfa"]._props.Ergonomics = modErgo,
@@ -452,9 +455,6 @@ class Mod
 				//Intermediate - 12
 				{
 					let modErgo = "12";
-					//SIG MCX pistol grip
-					items["5fbcbd6c187fea44d52eda14"]._props.Ergonomics = modErgo,
-
 					//MIAD Pistol grip for AR-15 based systems
 					items["5a339805c4a2826c6e06d73d"]._props.Ergonomics = modErgo,
 		
@@ -654,7 +654,7 @@ class Mod
 					//AR-15 Aeroknox AX-15 10.5 inch M-LOK handguard
 					items["619b5db699fb192e7430664f"]._props.Recoil = modRecoil,
 					items["619b5db699fb192e7430664f"]._props.Ergonomics = modErgo,
-
+					
 					//Daniel Defence RIS II 9.5 foregrip for AR-15-compatible systems // different lol
 					items["588b56d02459771481110ae2"]._props.Recoil = modRecoil,
 					items["588b56d02459771481110ae2"]._props.Ergonomics = modErgo,
@@ -676,6 +676,14 @@ class Mod
 					let modRecoil = "-2"; //meta ergo recoil
 					let modErgo = "16"; //meta ergo ergo
 					
+					//AR-10 Noveske SWS N6 10.5 inch handguard
+					items["5d00ede1d7ad1a0940739a76"]._props.Recoil = modRecoil,
+					items["5d00ede1d7ad1a0940739a76"]._props.Ergonomics = modErgo,
+					
+					//AR-10 CMMG MK3 RML9 9 inch M-LOK handguard
+					items["6065880c132d4d12c81fd8da"]._props.Recoil = modRecoil,
+					items["6065880c132d4d12c81fd8da"]._props.Ergonomics = modErgo,
+					
 					//Geissele SMR Mk.16 9.5 inch M-LOK handguard for AR-15
 					items["5ea16acdfadf1d18c87b0784"]._props.Recoil = modRecoil,
 					items["5ea16acdfadf1d18c87b0784"]._props.Ergonomics = modErgo,
@@ -692,6 +700,14 @@ class Mod
 				{
 					let modRecoil = "-3"; //good recoil recoil
 					let modErgo = "8"; //good recoil ergo
+					
+					//AR-10 Noveske SWS N6 Split handguard
+					items["5d00ef6dd7ad1a0940739b16"]._props.Recoil = modRecoil,
+					items["5d00ef6dd7ad1a0940739b16"]._props.Ergonomics = modErgo,
+					
+					//AR-10 CMMG MK3 RML15 15 inch M-LOK handguard
+					items["6065881d1246154cad35d637"]._props.Recoil = modRecoil,
+					items["6065881d1246154cad35d637"]._props.Ergonomics = modErgo,
 					
 					//Handguard MK 10 for use with AR-15 and compatible
 					items["5b2cfa535acfc432ff4db7a0"]._props.Recoil = modRecoil,
@@ -721,6 +737,10 @@ class Mod
 					//Remington Arms handguard for a R11 RSASS 
 					items["5a329052c4a28200741e22d3"]._props.Recoil = modRecoil,
 					items["5a329052c4a28200741e22d3"]._props.Ergonomics = modErgo,
+
+					//AR-10 Lancer LCH7 12.5 inch M-LOK handguard
+					items["5f6336bbda967c74a42e9932"]._props.Recoil = modRecoil,
+					items["5f6336bbda967c74a42e9932"]._props.Ergonomics = modErgo,
 
 					//Geissele SmodRecoil Mk.16 13.5 inch M-LOK handguard for AR-15
 					items["5ea16ada09aa976f2e7a51be"]._props.Recoil = modRecoil,
@@ -1756,7 +1776,7 @@ class Mod
 				items["6171367e1cb55961fa0fdb36"]._props.Recoil = "-11",
 				
 				//Sig-Sauer SRD QD 7.62x51 Sound Suppressor
-				items["5fbe760793164a5b6278efc8"]._props.Recoil = "-2",
+				items["5fbe760793164a5b6278efc8"]._props.Recoil = "-6",
 				items["5fbe760793164a5b6278efc8"]._props.Ergonomics = "-10",
 				
 				//Thunder Beast Ultra 5 Sound Suppressor
@@ -1782,7 +1802,7 @@ class Mod
 				items["5c7955c22e221644f31bfd5e"]._props.Ergonomics = "-14",
 				
 				//Sig-Sauer "SRD" 7.62x51 Sound Suppressor
-				items["5fbe7618d6fa9c00c571bb6c"]._props.Recoil = "-21",
+				items["5fbe7618d6fa9c00c571bb6c"]._props.Recoil = "-23",
 				items["5fbe7618d6fa9c00c571bb6c"]._props.Ergonomics = "-12" //low ergo penalty for being operator af
 				
 			}
@@ -1896,9 +1916,61 @@ class Mod
 		}
 		if(Config.experimental){
 			Logger.info(`Doing Fershte's Experiments`);
+			
+			//Ammo Recoil Changes
+			{
+				//Rationale: I think that a lot of guns feel, uh, terrible, if you use meta ammo. Gonna squish that a bit.
+				
+				
+				//"9x39BPammo"
+				items["5c0d688c86f77413ae3407b2"]._props.ammoRec = "5",				
+				
+				//"9x39PABammo"
+				items["61962d879bb3d20b0946d385"]._props.ammoRec = "0",
+				
+				//"9x39SP-5ammo"
+				items["57a0dfb82459774d3078b56c"]._props.ammoRec = "-5",
+				
+				//"545igolnik"
+				items["61962d879bb3d20b0946d385"]._props.ammoRec = "5",
+				
+				//"5457n40ammo"
+				items["61962d879bb3d20b0946d385"]._props.ammoRec = "-20",
+				
+				//"545bsammo"
+				items["61962d879bb3d20b0946d385"]._props.ammoRec = "0",
+				
+				//"545btammo"
+				items["61962d879bb3d20b0946d385"]._props.ammoRec = "-5",
+				
+				//"BlackoutAP"
+				items["5fd20ff893a8961fc660a954"]._props.ammoRec = "5",
+				
+				//"M995"
+				items["59e690b686f7746c9f75e848"]._props.ammoRec = "5",
+				
+				//"M855A1"
+				items["54527ac44bdc2d36668b4567"]._props.ammoRec = "0",
+				
+				//"M856A1"
+				items["59e6906286f7746c9f75e847"]._props.ammoRec = "-5",
+				
+				//"M61"
+				items["5a6086ea4f39f99cd479502f"]._props.ammoRec = "3",
+				
+				//"9x19PBP"
+				items["5efb0da7a29a85116f6ea05f"]._props.ammoRec = "5",
+				
+				//"366 AP"
+				items["5f0596629e22f464da6bbdd9"]._props.ammoRec = "0",
+				
+				//"PS12B"
+				items["5cadf6eeae921500134b2799"]._props.ammoRec = "0"
+				
+			}
+			
 			//STM-9 Parts
 			{
-				//Rationale: I think the VAL felt "right" in those early days of tarkov. The recent changes seem a bit stupid when some guns have like 29 recoil.
 				//barrels (actually a problem lol)
 				{
 					//10.5" barrel for STM-9 9x19
