@@ -6,5 +6,6 @@
 	"foregrips":true,
 	"muzzleDevices":true,
 	"tweaks":true,
-	"experimental":true
+	"experimental":true,
+	"compatibility":true
 }

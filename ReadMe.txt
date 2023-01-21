@@ -1,39 +1,12 @@
-Hoi; I'm Fershte; and I made a gigantic balance patch.
-EFT's balance is extremely ill fitting for a single player experience.
-So, I opted to change basically everything.
+This mod has an expirimental compatability feature - 
+if you set "compatability" to true in the config (defaults to false), all items that should be compatible IRL will now have that functionality. 
+There is a chance for clipping, so if you see clipping just don't use that. Tarkov has no way to set up an if a & b (or even more complex) conflict system.
+
+Currently the "compatability" setting only adjusts .308 caliber muzzle devices & barrels, and the Hybrid 46 & Omega45 silencers. - try an MCX with the Omega45, it's very cool looking :)
 
 
-//Changelog Feb 5 2022
-Way too much to say, lol. It balances out a whole lot of the new parts from 12.11 and 12.12, etc. Some good wood in here :)
 
-//Changelog April 25 2021
-Tweaks now also restores the AS Vall / VSS to a more realistic level of recoil.
-Tweaks now also rebalances the Sig MCX to a more realistic level of recoil - it performs quite like an M4.
+A wise man once said "If an M4 in a game is a bad weapon, then the GAME is wrong."
 
-//Changelog April 10 2021
-"tweaks" to both MDRs, the RFB, AKS-74U, and VPO-209 to make them a little more competitive.
-adjusted muzzle devices
-client stability improved 
-
-To choose what this mod balances, simply go into the config and change any true to a false:
-	"optics":true,
-	"pistolGrips":true,
-	"furniture":true,
-	"stocks":true,
-	"foregrips":true,
-	"muzzledevices":true,
-	"tweaks":false
-
-Optics makes every optic equal in ergo penalty to the bis in that category, so you can choose based on your preferences rather than meta.
-
-PistolGrips breaks grips into 3 categories and dramatically expands how many items are bis or great.
-
-Furniture tweaks weapon handguards mostly, and aims to make gun customization a little more fun and aesthetic while retaining some min maxing.
-
-Stocks tries to make AR-15 compatible stocks a little more sane.
-
-Foregrips makes all foregrips almost equally valuable, but in 4 categories based on mission, from high ergo to high recoil.
-
-MuzzleDevices is my personal bugbear, balancing tarkov's muzzle devices gives me a headache. I hope you like my changes!
-
-Tweaks doesn't do anything in this version, but in future versions it will make balance changes that don't fit these categories.
+This mod adjusts basically every single category of part in an attempt to bring variety and flavor to weapon modding, improving almost every "non meta" part in the game, bringing everything closer together. 
+The Meta builds are EXACTLY THE SAME as they used to be, but now there are more parts that are equal to those builds, and parts that were considered mediocre or bad are now more realistically good.
